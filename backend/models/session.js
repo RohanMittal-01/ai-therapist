@@ -6,7 +6,7 @@ const sessionSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  messages: [
+  context: 
     {
       content: {
         type: String,
@@ -17,7 +17,6 @@ const sessionSchema = new mongoose.Schema({
         default: Date.now
       }
     }
-  ]
 });
 
 const Session = mongoose.model('Session', sessionSchema);
