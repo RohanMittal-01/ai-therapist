@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Session = require('./path/to/your/session/model');
+const Session = require('../models/Session');
 // Create a new session
 router.post('/', async (req, res) => {
     try {
@@ -14,3 +14,5 @@ router.post('/', async (req, res) => {
       res.status(500).json({ message: 'Error creating session' });
     }
   });
+
+  module.exports = router;

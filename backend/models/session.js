@@ -1,5 +1,19 @@
 const { Schema, model } = require('mongoose');
 
+const conversationSchema = new Schema(
+  {
+    role: {
+      type: String,
+      required: true,
+    },
+    content: {
+      type: String,
+      required: true,
+    },
+  },
+  { _id: false }
+);
+
 const sessionSchema = new Schema(
   {
     sessionId: {
@@ -7,10 +21,7 @@ const sessionSchema = new Schema(
       required: true,
       unique: true,
     },
-    context: {
-      type: String,
-      required: true,
-    },
+    conversation: [conversationSchema],
   },
   { timestamps: true }
 );
