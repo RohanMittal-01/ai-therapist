@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 const { Configuration, OpenAIApi } = require("openai");
-const Session = require('./models/Session');
+const Session = require('./models/session.js');
 require('dotenv').config()
 
 
