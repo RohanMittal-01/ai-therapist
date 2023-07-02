@@ -39,12 +39,11 @@ The application is deployed and accessible at: <a href="https://virtual-therapis
 
 The Virtual Therapist application has potential for further improvements and enhancements. Some future scope ideas include:
 
-- Integration of Google's Speech-to-Text and Text-to-Speech APIs to provide voice-based interactions with the virtual therapist.
+- Integration of Google's Speech-to-Text and Text-to-Speech APIs to provide better and mutli lingual voice-based interactions with the virtual therapist.
 - Refining the response generation based on user interactions and feedback.
-- Supporting multiple therapy sessions simultaneously by managing sessions more efficiently.
-- Expanding language support to cater to users from different regions and cultures.
+- Supporting multiple therapy sessions simultaneously by managing sessions more efficiently**.
 
-Please note that these future scope ideas require additional resources, bandwidth, and development effort.
+**Please note that these future scope ideas require additional resources, bandwidth, and development effort.
 
 
 
