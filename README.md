@@ -5,7 +5,7 @@ The program is entirely anonymous and uses the context of a particular session t
 AI Therapist is a web application that utilizes OpenAI's GPT-3.5 model to provide virtual therapy sessions. Users can have conversations with the AI-powered therapist, which generates responses based on the ongoing conversation. Speach is the preferred mode of communication to make the system more humane and approachable.
 
 ## Deployment
-The application is deployed and accessible at: [https://virtual-therapist.netlify.app/](https://virtual-therapist.netlify.app/)
+The application is deployed and accessible at: <a href="https://virtual-therapist.netlify.app/" target="_blank">https://virtual-therapist.netlify.app/</a>
 
 ## Technologies Used
 
