@@ -1,6 +1,8 @@
 //Connect to the database in mongoDB
 const mongoose = require('mongoose')
-const mongodbUri = "mongodb+srv://flat-chat:trying123@db.oboqhty.mongodb.net/?retryWrites=true&w=majority"
+require('dotenv').config()
+
+const mongodbUri = process.env.MONGO_DATABASE
 
 //Send a connection request to the database
 const mongoDb = async () => {

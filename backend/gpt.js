@@ -1,9 +1,11 @@
 const { MongoClient } = require('mongodb');
 const { Configuration, OpenAIApi } = require("openai");
 const Session = require('./models/Session');
+require('dotenv').config()
+
 
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey: process.env.OPEN_AI_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
