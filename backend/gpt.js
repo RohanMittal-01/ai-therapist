@@ -18,7 +18,7 @@ async function generateResponse(sessionId, message) {
 
     // Retrieve the conversation context from the database
     const sessionContext = await collection.findOne({ sessionId });
-    const conversationContext = sessionContext ? sessionContext.context : '';
+    const conversationContext = (sessionContext || (Date.now() - sessionContext.updatedAt.getTime())>24 * 60 * 60 * 1000) ? sessionContext.context : '';
 
     // Generate the GPT response
     const response = await openaiInstance.complete({
